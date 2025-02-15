@@ -46,5 +46,11 @@ input {
 
 .accent {
     color: #a7c080;
-    font-weight: bolder;
+}
+.accent_unik {
+    color: #cba6f7;
+}
+
+.tok{
+    font-family: nasinNanpa;
 }
