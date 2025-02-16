@@ -1,8 +1,8 @@
 update_sitelen = () =>{
-    v = document.getElementById("lasina_input").value
+    const v = String(document.getElementById("lasina_input").value)
     if (v == ""){
         x = document.getElementById("out_p").innerText = "sitelen li kama lon ni"
         return
     }
-    document.getElementById("out_p").innerText = v
+    document.getElementById("out_p").innerText = v.trim()
 }

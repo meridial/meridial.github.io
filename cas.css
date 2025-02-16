@@ -13,18 +13,18 @@
     src: url('/font/noto_sans_thai.ttf');
 }
 
+
 a,
 u,
 p {
     color: #2D353B;
     text-decoration: none;
-    font-size: 2.1415vw;
     font-family: firaCode;
     font-weight: Bold;
+    font-size: 1em;
 }
 
 h1 {
-    font-size: 5vw;
     color: #2D353B;
     text-decoration: none;
     font-family: firaCode;
@@ -36,7 +36,7 @@ input {
     font-family: firaCode;
     font-size: 2vw;
     border: none;
-    outline: 7px solid #a7c080;
+    outline: 1vh solid #a7c080;
     border-radius: 5px;
 }
 
