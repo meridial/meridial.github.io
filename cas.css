@@ -13,44 +13,107 @@
     src: url('/font/noto_sans_thai.ttf');
 }
 
+:root {
+    --txt_color: #2D353B;
+    --txt_size: 1.25em;
+    --accent: #a7c080;
+    --txtbox_color: #f1e4c5;
+    --anchor_color: #cba6f7;
+    --bg_color: #f2efdf;
+}
+
+
+body {
+    background-color: var(--bg_color);
+}
 
 a,
 u,
-p {
-    color: #2D353B;
+p,
+h1,
+li {
+    color: var(--txt_color);
     text-decoration: none;
     font-family: firaCode;
     font-weight: Bold;
-    font-size: 1em;
+    font-size: var(--txt_size);
 }
 
 h1 {
-    color: #2D353B;
-    text-decoration: none;
+    color: var(--txt_color);
     font-family: firaCode;
     font-weight: Bold;
 }
 
-input {
-    background-color: #f1e4c5;
+.txtbox {
+    display: inline-block;
+    background-color: var(--txtbox_color);
     font-family: firaCode;
-    font-size: 2vw;
+    font-size: var(--txt_size);
     border: none;
-    outline: 1vh solid #a7c080;
+    outline: 0.5em solid var(--accent);
     border-radius: 5px;
+    min-width: 16vw;
+    transition: min-width 1s;
 }
 
-.bak {
-    background-color: #f3ead3;
+.txtbox:not([value=""]) {
+    display: inline-block;
+    background-color: var(--txtbox_color);
+    font-family: firaCode;
+    font-size: var(--txt_size);
+    border: none;
+    outline: 0.5em solid var(--accent);
+    border-radius: 5px;
+    min-width: 32vw;
+    transition: min-width 1s;
 }
 
 .accent {
-    color: #a7c080;
-}
-.accent_unik {
-    color: #cba6f7;
+    color: var(--accent);
 }
 
-.tok{
+.anchor {
+    color: var(--anchor_color);
+    font-size: calc(var(--txt_size));
+    transition: font-size 500ms;
+}
+
+.anchor:hover {
+    color: var(--anchor_color);
+    font-size: calc(var(--txt_size) + 0.25em);
+    transition: font-size 500ms;
+}
+
+.tok {
     font-family: nasinNanpa;
+    font-size: calc(var(--txt_size) + 0.50em);
+}
+
+.anchor_with_border {
+    display: inline-block;
+    border: 1em solid var(--accent);
+    padding: 1em;
+    transition: margin-left 1s;
+    transition: margin-left 3s, border 1s;
+}
+
+.anchor_with_border:hover {
+    display: inline-block;
+    border: 1.25em solid var(--accent);
+    margin-left: 10%;
+    padding: 1em;
+    transition: margin-left 3s, border 1s;
+}
+
+
+.doohickey {
+    transition: transform 8s;
+    transform: rotateY(0deg);
+}
+
+
+.doohickey:hover {
+    transition: transform 8s;
+    transform: rotateY(180deg);
 }

@@ -6,22 +6,25 @@
   <link rel="icon" type="image/x-icon" href="/sitelen/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>tawa pona!</title>
-  <script src="sewi.js"></script>
 </head>
 
-<body class="bak">
+<body>
   <div style="text-align: center;">
     <h1 style="font-size: 5vw;">lasina <span class="accent" style="font-size: 6vw;">-></span> sitelen</h1>
-    <span class="accent" style="font-size: 2.1415vw;">>> </span><input size="64vw"
-      placeholder="o pana e sitelen lasina lon ni" type="text" id="lasina_input" onkeyup="update_sitelen()">
-    <p class="tok" style="font-size: 5vw;" id="out_p">sitelen li kama la lon ni</p>
+    <div style="min-width: 100px;">
+      <span class="txtbox" spellcheck="false" contenteditable="true" id="lasina_input"></span>
+    </div>
+    <p class="tok" style="font-size: 3em;" id="out_p">ala li lon ni</p>
     <p>this just shows the lasina but with the <a href="https://github.com/ETBCOR/nasin-nanpa"
-        class="accent_unik">nasin-nanpa</a> font (for now)</p>
-    <p>unicode range is still private (some glyphs dont even follow the standard)</p>
+        class="anchor">nasin-nanpa</a> font (maybe u wanna know what it looks like)</p>
+    <p>there is a standard. however. <span class="tok">mi sona ala e nasin seme la kepeken ni</span></p>
+    <p>use <span class="accent">+</span> to make nested charcters. example: <span class="accent">sitelen + pona</span></p>
+    <p class="accent">feel free to enter LF</p>
     <p style="font-family: nasinNanpa;">o jo tenpo musi pona a!</p>
   </div>
-  <a href="/index.html" class="accent_unik">
+  <a href="/index.html" class="anchor">
     << ../index.html</a>
+    <script src="sewi.js"></script>
 </body>
 
 </html>

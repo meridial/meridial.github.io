@@ -1,8 +1,14 @@
-update_sitelen = () =>{
-    const v = String(document.getElementById("lasina_input").value)
+window.onload = () => {
+    document.getElementById("lasina_input").setAttribute("value", "")
+}
+
+document.getElementById("lasina_input").addEventListener("keyup", (_) => {
+    const v = document.getElementById("lasina_input").innerText.trim()
     if (v == ""){
-        x = document.getElementById("out_p").innerText = "sitelen li kama lon ni"
+        document.getElementById("out_p").innerText = "ala li lon ni"
+        document.getElementById("lasina_input").setAttribute("value", "")
         return
     }
-    document.getElementById("out_p").innerText = v.trim()
-}
+    document.getElementById("lasina_input").setAttribute("value", "โว่ย")
+    document.getElementById("out_p").innerText = v
+});
